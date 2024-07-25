@@ -11,6 +11,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanc
 Route::get('/me', [AuthController::class, 'me'])->middleware('auth:sanctum');
 Route::post('/files', [FileUploadController::class,'upload']);
 Route::get('/files/{file}', [FileUploadController::class,'download']);
+Route::delete('/files/{file}', [FileUploadController::class,'delete']);
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/replies/{support_id}', [ReplySupportApiController::class, 'getRepliesFromSupport']);

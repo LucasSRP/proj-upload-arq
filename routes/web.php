@@ -1,5 +1,4 @@
 <?php
-
 use App\Http\Controllers\FileUploadController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
@@ -32,7 +31,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/admin', function () {
     return Inertia::render('Admin');
-})->middleware(['auth', 'verified'])->name('admin');
+})->middleware(['auth'])->name('admin');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

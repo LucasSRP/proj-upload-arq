@@ -43,8 +43,8 @@ const closeModal = () => {
             <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">Delete Account</h2>
 
             <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting
-                your account, please download any data or information that you wish to retain.
+                Depois que sua conta for excluída, todos os seus recursos e dados serão excluídos permanentemente. Antes de excluir
+                sua conta, baixe quaisquer dados ou informações que você deseja reter.
             </p>
         </header>
 
@@ -53,12 +53,12 @@ const closeModal = () => {
         <Modal :show="confirmingUserDeletion" @close="closeModal">
             <div class="p-6">
                 <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
-                    Are you sure you want to delete your account?
+                    Tem certeza de que deseja excluir sua conta?
                 </h2>
 
                 <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                    Once your account is deleted, all of its resources and data will be permanently deleted. Please
-                    enter your password to confirm you would like to permanently delete your account.
+                    Depois que sua conta for excluída, todos os seus recursos e dados serão excluídos permanentemente. Por favor
+                    digite sua senha para confirmar que deseja excluir permanentemente sua conta.
                 </p>
 
                 <div class="mt-6">

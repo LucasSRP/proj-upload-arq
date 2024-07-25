@@ -9,7 +9,7 @@ class CreateFilesTable extends Migration
     public function up()
     {
         Schema::create('files', function (Blueprint $table) {
-            $table->id();
+           $table->id();
             $table->string('name');
             $table->string('path');
             $table->unsignedBigInteger('user_id');
